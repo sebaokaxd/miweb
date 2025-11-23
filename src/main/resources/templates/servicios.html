@@ -62,7 +62,7 @@
                     <p class="card-text text-muted" th:text="${s.description}">Descripción</p>
                     <div class="mt-auto d-flex justify-content-between align-items-center">
                         <span class="fw-bold text-primary" th:text="${s.price}">$00</span>
-                        <a th:href="@{'/contacto'}" class="btn btn-sm btn-outline-primary">Solicitar</a>
+                        <a th:href="@{'/solicitar?servicio=' + ${s.title}}"class="btn btn-sm btn-outline-primary">Solicitar</a>
                     </div>
                 </div>
             </div>
