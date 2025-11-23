@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -13,6 +15,7 @@ public class SolicitudServicio {
     private String nombre;
     private String email;
     private String mensaje;
+    private LocalDateTime fecha;
 
     public SolicitudServicio() {}
 
@@ -21,6 +24,7 @@ public class SolicitudServicio {
         this.nombre = nombre;
         this.email = email;
         this.mensaje = mensaje;
+        this.fecha = LocalDateTime.now();
     }
 
     // Getters y setters
@@ -37,4 +41,7 @@ public class SolicitudServicio {
 
     public String getMensaje() { return mensaje; }
     public void setMensaje(String mensaje) { this.mensaje = mensaje; }
+
+    public LocalDateTime getFecha() { return fecha; }
+    public void setFecha(LocalDateTime fecha) { this.fecha = fecha; }
 }
