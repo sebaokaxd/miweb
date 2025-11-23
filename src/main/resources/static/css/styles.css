@@ -38,3 +38,21 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
+.navbar {
+    font-size: 18px;
+}
+
+.nav-link {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important; /* Azul elegante Bootstrap */
+}
+
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
